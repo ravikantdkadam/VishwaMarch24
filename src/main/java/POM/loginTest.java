@@ -28,6 +28,8 @@ public class loginTest{                                    // This is login Test
 		
 		loginpg.clickonforgotlink();
 		
+		System.out.println("End of Test case");
+		
 	
 	}
 
