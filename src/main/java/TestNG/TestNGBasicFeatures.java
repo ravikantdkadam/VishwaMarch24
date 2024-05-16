@@ -17,7 +17,7 @@ public class TestNGBasicFeatures {
 	// priority is keyword so mention always in small letter and after the annotation
 	//groups fetaure used to execute specific test cases ===>testng.xml
 	
-	@Test(groups="sanity")
+	@Test(enabled=false)
 	
 public void verifyloginsuccess() {              
 		System.out.println("@Test======================verifyloginsuccess");
@@ -25,7 +25,7 @@ public void verifyloginsuccess() {
 		
 	}
 	
-	@Test ()
+	@Test (groups="sanity")
 	
 	public void Verifylogodiaplayed() {                  
 		System.out.println("@Test======================Verifylogodiaplayed");

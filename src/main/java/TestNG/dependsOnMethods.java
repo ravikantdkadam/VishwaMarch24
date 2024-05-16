@@ -23,7 +23,7 @@ public class dependsOnMethods {
 		
 	public void verifylaunchapplication() {
 			
-			int i=9/0;
+			//int i=9/0;
 			System.out.println("@Test======================verifylaunchapplication");
 			
 			
