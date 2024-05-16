@@ -3,10 +3,17 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestNG.enabledfeature"/>
-      <methods>
-      <include name ="Verifylogodiaplayed"/>     
-</methods>    
+      <class name="TestNG.ParallelTest1"/>
     </classes>
   </test> <!-- Test -->
+  
+    <test thread-count="5" name="Test2">
+    <classes>
+      <class name="TestNG.ParallelTest2"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
 </suite> <!-- Suite -->

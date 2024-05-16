@@ -13,8 +13,9 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AssertDemo {
+public class AssertTest {
 	
+
 	static WebDriver driver;
 	
 	@BeforeMethod
@@ -115,9 +116,5 @@ public class AssertDemo {
 	
 	
 	
-	
-	}
-	
-	
 
-
+}
