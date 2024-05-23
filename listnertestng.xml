@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="TestNG.CustomListener"></listener>
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG.invocationCountfeature"/>
+      <class name="TestNG.dependsOnMethods"/>
+      <class name="TestNG.ParallelTest1"/>
+      <class name="TestNG.SoftAssertDemo"/>
+      <class name="TestNG.TestNGBasicConcept"/>
+      <class name="TestNG.enabledfeature"/>
+      <class name="TestNG.ParallelTest2"/>
+      <class name="TestNG.TestNGBasicFeatures"/>
+      <class name="TestNG.AssertTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
