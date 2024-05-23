@@ -1,25 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="3" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-16T13:18:24 IST" name="Suite" finished-at="2024-05-16T13:18:37 IST" duration-ms="13419">
+  <suite started-at="2024-05-17T13:36:38 IST" name="Failed suite [Suite]" finished-at="2024-05-17T13:37:00 IST" duration-ms="22794">
     <groups>
+      <group name="sanity">
+        <method signature="dependsOnMethods.Verifycreateaccountbutton()[pri:0, instance:TestNG.dependsOnMethods@31190526]" name="Verifycreateaccountbutton" class="TestNG.dependsOnMethods"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-05-16T13:18:24 IST" name="Test" finished-at="2024-05-16T13:18:33 IST" duration-ms="9565">
-      <class name="TestNG.ParallelTest1">
-        <test-method signature="preconditionsfacebook()[pri:0, instance:TestNG.ParallelTest1@7cc0cdad]" started-at="2024-05-16T13:18:24 IST" name="preconditionsfacebook" finished-at="2024-05-16T13:18:33 IST" duration-ms="9488" status="PASS">
+    <test started-at="2024-05-17T13:36:38 IST" name="Test(failed)" finished-at="2024-05-17T13:37:00 IST" duration-ms="22794">
+      <class name="TestNG.SoftAssertDemo">
+        <test-method is-config="true" signature="preconditions()[pri:0, instance:TestNG.SoftAssertDemo@36fc695d]" started-at="2024-05-17T13:36:38 IST" name="preconditions" finished-at="2024-05-17T13:36:47 IST" duration-ms="9458" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preconditionsfacebook -->
-      </class> <!-- TestNG.ParallelTest1 -->
-    </test> <!-- Test -->
-    <test started-at="2024-05-16T13:18:33 IST" name="Test2" finished-at="2024-05-16T13:18:37 IST" duration-ms="3781">
-      <class name="TestNG.ParallelTest2">
-        <test-method signature="preconditionsgoogle()[pri:0, instance:TestNG.ParallelTest2@217ed35e]" started-at="2024-05-16T13:18:33 IST" name="preconditionsgoogle" finished-at="2024-05-16T13:18:37 IST" duration-ms="3764" status="PASS">
+        </test-method> <!-- preconditions -->
+        <test-method signature="titlepageTest()[pri:0, instance:TestNG.SoftAssertDemo@36fc695d]" started-at="2024-05-17T13:36:47 IST" name="titlepageTest" finished-at="2024-05-17T13:36:48 IST" duration-ms="704" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Expected result not match Actual resul expected [Google123] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Expected result not match Actual resul expected [Google123] but found [Google]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at TestNG.SoftAssertDemo.titlepageTest(SoftAssertDemo.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preconditionsgoogle -->
-      </class> <!-- TestNG.ParallelTest2 -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- titlepageTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG.SoftAssertDemo@36fc695d]" started-at="2024-05-17T13:36:48 IST" name="teardown" finished-at="2024-05-17T13:36:50 IST" duration-ms="1962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNG.SoftAssertDemo -->
+      <class name="TestNG.dependsOnMethods">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestNG.dependsOnMethods@31190526]" started-at="2024-05-17T13:36:50 IST" name="openBrowser" finished-at="2024-05-17T13:36:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="verifylaunchapplication()[pri:0, instance:TestNG.dependsOnMethods@31190526]" started-at="2024-05-17T13:36:50 IST" name="verifylaunchapplication" finished-at="2024-05-17T13:36:50 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at TestNG.dependsOnMethods.verifylaunchapplication(dependsOnMethods.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylaunchapplication -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:TestNG.dependsOnMethods@31190526]" started-at="2024-05-17T13:36:50 IST" name="closebrowser" finished-at="2024-05-17T13:36:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method signature="Verifycreateaccountbutton()[pri:0, instance:TestNG.dependsOnMethods@31190526]" started-at="2024-05-17T13:36:50 IST" name="Verifycreateaccountbutton" finished-at="2024-05-17T13:36:50 IST" depends-on-methods="TestNG.dependsOnMethods.verifylaunchapplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNG.dependsOnMethods.Verifycreateaccountbutton() on instance TestNG.dependsOnMethods@31190526 depends on not successfully finished methods 
+[TestNG.dependsOnMethods.verifylaunchapplication() on instance TestNG.dependsOnMethods@31190526]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNG.dependsOnMethods.Verifycreateaccountbutton() on instance TestNG.dependsOnMethods@31190526 depends on not successfully finished methods 
+[TestNG.dependsOnMethods.verifylaunchapplication() on instance TestNG.dependsOnMethods@31190526]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifycreateaccountbutton -->
+        <test-method signature="verifyloginsuccess()[pri:0, instance:TestNG.dependsOnMethods@31190526]" started-at="2024-05-17T13:36:50 IST" name="verifyloginsuccess" finished-at="2024-05-17T13:36:50 IST" depends-on-methods="TestNG.dependsOnMethods.verifylaunchapplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNG.dependsOnMethods.verifyloginsuccess() on instance TestNG.dependsOnMethods@31190526 depends on not successfully finished methods 
+[TestNG.dependsOnMethods.verifylaunchapplication() on instance TestNG.dependsOnMethods@31190526]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNG.dependsOnMethods.verifyloginsuccess() on instance TestNG.dependsOnMethods@31190526 depends on not successfully finished methods 
+[TestNG.dependsOnMethods.verifylaunchapplication() on instance TestNG.dependsOnMethods@31190526]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginsuccess -->
+        <test-method signature="Verifynoteuderloginbox()[pri:0, instance:TestNG.dependsOnMethods@31190526]" started-at="2024-05-17T13:36:50 IST" name="Verifynoteuderloginbox" finished-at="2024-05-17T13:36:50 IST" depends-on-methods="TestNG.dependsOnMethods.verifylaunchapplication" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNG.dependsOnMethods.Verifynoteuderloginbox() on instance TestNG.dependsOnMethods@31190526 depends on not successfully finished methods 
+[TestNG.dependsOnMethods.verifylaunchapplication() on instance TestNG.dependsOnMethods@31190526]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNG.dependsOnMethods.Verifynoteuderloginbox() on instance TestNG.dependsOnMethods@31190526 depends on not successfully finished methods 
+[TestNG.dependsOnMethods.verifylaunchapplication() on instance TestNG.dependsOnMethods@31190526]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifynoteuderloginbox -->
+      </class> <!-- TestNG.dependsOnMethods -->
+      <class name="TestNG.AssertTest">
+        <test-method is-config="true" signature="preconditions()[pri:0, instance:TestNG.AssertTest@662ac478]" started-at="2024-05-17T13:36:50 IST" name="preconditions" finished-at="2024-05-17T13:36:57 IST" duration-ms="7492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditions -->
+        <test-method signature="assertnull()[pri:0, instance:TestNG.AssertTest@662ac478]" started-at="2024-05-17T13:36:57 IST" name="assertnull" finished-at="2024-05-17T13:36:58 IST" duration-ms="14" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [Facebook – log in or sign up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [Facebook – log in or sign up]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotSame(Assert.java:1574)
+at org.testng.Assert.assertNull(Assert.java:1507)
+at org.testng.Assert.assertNull(Assert.java:1495)
+at TestNG.AssertTest.assertnull(AssertTest.java:90)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertnull -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:TestNG.AssertTest@662ac478]" started-at="2024-05-17T13:36:58 IST" name="closebrowser" finished-at="2024-05-17T13:37:00 IST" duration-ms="2945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TestNG.AssertTest -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
 </testng-results>

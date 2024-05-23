@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.AssertTest">
+      <class name="TestNG.dependsOnMethods">
         <methods>
           <include name="closebrowser"/>
-          <include name="preconditions"/>
-          <include name="assertnull"/>
+          <include name="Verifycreateaccountbutton"/>
+          <include name="openBrowser"/>
+          <include name="verifyloginsuccess"/>
+          <include name="Verifynoteuderloginbox"/>
+          <include name="verifylaunchapplication"/>
         </methods>
-      </class> <!-- TestNG.AssertTest -->
+      </class> <!-- TestNG.dependsOnMethods -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
