@@ -2,7 +2,6 @@ package Selenium;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
