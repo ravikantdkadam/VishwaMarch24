@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="44.571" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="FreeCRM application Test" name="Create Contact page Test" time="25.676">
+<system-out><![CDATA[
+When user move and click on the contact tab.................................passed
+Then user is on contact page................................................passed
+Then Click on Create button.................................................passed
+Then Enter the following details and click on save Button...................passed
+]]></system-out>
+</testcase>
+<testcase classname="FreeCRM application Test" name="Create Deals page Test" time="18.482">
+<system-out><![CDATA[
+When userclick on deals tab.................................................passed
+Then user is on deals page..................................................passed
+Then Click on dealsCreate button............................................passed
+Then Enter the following deals details and click on save Button.............passed
+]]></system-out>
+</testcase>
+</testsuite>
