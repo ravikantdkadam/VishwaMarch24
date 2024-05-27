@@ -1,5 +1,6 @@
 Feature: FreeCRM application Test 
 
+@First
 Scenario: Create Contact page Test
 
 #Given user is on homepage
@@ -11,7 +12,7 @@ Then Enter the following details and click on save Button
 |Prmila|Ajinky|Sutar|pramila1235@gmail.com|
 
 
-
+@Second
 Scenario: Create Deals page Test
 
 #Given user is on dealshomepage

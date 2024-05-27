@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="44.571" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="FreeCRM application Test" name="Create Contact page Test" time="25.676">
+<testsuite name="Cucumber" time="0.465" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Free CRM Test" name="User login with invalid credentials" time="0.061">
 <system-out><![CDATA[
-When user move and click on the contact tab.................................passed
-Then user is on contact page................................................passed
-Then Click on Create button.................................................passed
-Then Enter the following details and click on save Button...................passed
+Given user login Test with invalid credentials..............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FreeCRM application Test" name="Create Deals page Test" time="18.482">
+<testcase classname="Free CRM Test" name="User create Deals Test" time="0.004">
 <system-out><![CDATA[
-When userclick on deals tab.................................................passed
-Then user is on deals page..................................................passed
-Then Click on dealsCreate button............................................passed
-Then Enter the following deals details and click on save Button.............passed
+Given user create Deals.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Test" name="User create Case Test" time="0.004">
+<system-out><![CDATA[
+Given user create Case......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Test" name="User create Document Test" time="0.005">
+<system-out><![CDATA[
+Given user create Document..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Test" name="User create Companies Test" time="0.002">
+<system-out><![CDATA[
+Given user create Companies.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
